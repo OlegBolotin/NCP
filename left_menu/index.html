@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Off-Canvas Navigation w/Page Transitions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+
+
+  <!-- https://www.pinterest.com/pin/75576099974715878/ -->
+  <div class="nav__bar">
+    <a href="#" class="nav__trigger">
+      <div class="bars"></div>
+    </a>
+  </div>
+
+  <div class="container__for__nav">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">Новости</a></li>
+        <li class="nav__item"><a href="#">Крипта</a></li>
+        <li class="nav__item"><a href="#">Программирование</a></li>
+        <li class="nav__item"><a href="#">Linux</a></li>
+        <li class="nav__item"><a href="#">Hacking</a></li>
+        <!-- <li class="nav__item"><a href="#">Chillwave</a></li> -->
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container__for__main__nav">
+
+    <main class="main">
+      <div class="wrapper">
+        <header class="header">
+          <div class="container">
+            <div class="header_body">
+              <div class="container_logo_burger">
+                <a href="#" class="header_logo">
+                  <img src="assets/img/logo.jpg" alt="">
+                </a>
+              </div><!-- container_logo_burger -->
+              <nav class="header_menu">
+                <ul class="header_list">
+                  <li>
+                    <a href="#" class="header_link">Новости</a>
+                  </li>
+                  <li>
+                    <a href="#" class="header_link">Крипта</a>
+                  </li>
+                  <li>
+                    <a href="#" class="header_link">Программирование</a>
+                  </li>
+                </ul>
+              </nav>
+            </div><!-- header_body -->
+          </div><!-- container -->
+        </header>
+        <div class="second_block">
+          <div class="container_top_news">
+            <div class="top_news">
+              <img src="assets/img/1.jpg" alt="" class="img_top_news">
+              <p class="title_top_news">Title of top news title of top news title of top news</p>
+            </div>
+            <!-- Cryptocurrency Price Widget -->
+            <script>
+              ! function() {
+                var e = document.getElementsByTagName("script"),
+                  t = e[e.length - 1],
+                  n = document.createElement("script");
+
+                function r() {
+                  var e = crCryptocoinPriceWidget.init({
+                    base: "USD,EUR,CNY,GBP",
+                    items: "BTC,ETH,LTC,XMR,DASH",
+                    backgroundColor: "FFFFFF",
+                    streaming: "1",
+                    rounded: "1",
+                    boxShadow: "1",
+                    border: "1"
+                  });
+                  t.parentNode.insertBefore(e, t)
+                }
+                n.src = "https://co-in.io/ru/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH", n.async = !0, n.readyState ? n.onreadystatechange = function() {
+                  "loaded" != n.readyState && "complete" != n.readyState || (n.onreadystatechange = null, r())
+                } : n.onload = function() {
+                  r()
+                }, t.parentNode.insertBefore(n, null)
+              }();
+            </script><a href="https://currencyrate.today/"></a><!-- /Cryptocurrency Price Widget -->
+          </div>
+        </div><!-- end title_top_news -->
+
+        <div class="news_block">
+          <div class="container_news_block">
+            <div class="title_news_underline">
+              <p class="p_title_news_underline">Новости</p>
+            </div>
+            <div class="first_three">
+              <div class="first_block">
+                <img src="assets/img/1.jpg" alt="" class="first_block_img">
+                <div class="text">
+                  <p class="date_of_news_block">10.01.2020</p>
+                  <p class="first_block_p">Title title title title title title title title title title</p>
+                  <p class="first_content_text">Text text text text text text text text text text text text tex text text text text text</p>
+                </div>
+              </div>
+
+              <div class="second_block_news">
+                <img src="assets/img/1.jpg" alt="" class="second_block_img">
+                <div class="text">
+                  <p class="date_of_news_block">10.01.2020</p>
+                  <p class="second_block_p">Title title title title title title title title title title </p>
+                  <p class="second_content_text">Text text text text text text text text text text text text tex text text text text text</p>
+                </div>
+              </div>
+
+              <div class="third_block">
+                <img src="assets/img/1.jpg" alt="" class="third_block_img">
+                <div class="text">
+                  <p class="date_of_news_block">10.01.2020</p>
+                  <p class="third_block_p">Title title title title title title title title title title</p>
+                  <p class="third_content_text">Text text text text text text text text text text text text tex text text text text text</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="second_three">
+              <div class="fourth_block">
+                <img src="assets/img/1.jpg" alt="" class="fourth_block_img">
+                <div class="text">
+                  <p class="date_of_news_block">10.01.2020</p>
+                  <p class="fourth_block_p">Title title title title title title title title title title</p>
+                  <p class="fourth_content_text">Text text text text text text text text text text text text tex text text text text text</p>
+                </div>
+              </div>
+
+              <div class="fifth_block">
+                <img src="assets/img/1.jpg" alt="" class="fifth_block_img">
+                <div class="text">
+                  <p class="date_of_news_block">10.01.2020</p>
+                  <p class="fifth_block_p">Title title title title title title title title title title</p>
+                  <p class="fifth_content_text">Text text text text text text text text text text text text tex text text text text text</p>
+                </div>
+              </div>
+
+              <div class="sixth_block">
+                <img src="assets/img/1.jpg" alt="" class="sixth_block_img">
+                <div class="text">
+                  <p class="date_of_news_block">10.01.2020</p>
+                  <p class="sixth_block_p">Title title title title title title title title title title</p>
+                  <p class="sixth_content_text">Text text text text text text text text text text text text tex text text text text text</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="third_three">
+              <div class="seventh_block">
+                <img src="assets/img/1.jpg" alt="" class="seventh_block_img">
+                <div class="text">
+                  <p class="date_of_news_block">10.01.2020</p>
+                  <p class="seventh_block_p">Title title title title title title title title title title</p>
+                  <p class="seventh_content_text">Text text text text text text text text text text text text tex text text text text text</p>
+                </div>
+              </div>
+
+              <div class="eighth_block">
+                <img src="assets/img/1.jpg" alt="" class="eighth_block_img">
+                <div class="text">
+                  <p class="date_of_news_block">10.01.2020</p>
+                  <p class="eighth_block_p">Title title title title title title title title title title</p>
+                  <p class="eighth_content_text">Text text text text text text text text text text text text tex text text text text text</p>
+                </div>
+              </div>
+
+              <div class="ninth_block">
+                <img src="assets/img/1.jpg" alt="" class="ninth_block_img">
+                <div class="text">
+                  <p class="date_of_news_block">10.01.2020</p>
+                  <p class="ninth_block_p">Title title title title title title title title title title</p>
+                  <p class="ninth_content_text">Text text text text text text text text text text text text tex text text text text text</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div><!-- news_block -->
+
+        <div class="footer">
+          <div class="footer_underline">
+            <p class="p_footer_underline">Telegram каналы</p>
+          </div>
+          <div class="container_footer">
+            <p class="p_dark"><a class="dark" href="https://t.me/DARKLIbAry">Наш Telegram канал на тему Linux, Pentest, Hacking</a></p>
+            <p class="p_hackknews"><a class="hackknews" href="https://t.me/hackknews">Сдесь мы публикуем новости из мира киберпреступлений</a></p>
+            <p class="p_crypt"><a class="crypt" href="https://t.me/cryptocurrency_word">Если Вас интересует Крипта и Blockchain, Вам сюда</a></p>
+            <p class="p_itsit"><a class="itsit" href="https://t.me/I7SIT">Все хорошие программисты читают наш Telegram канал It's IT💡💻</a></p>
+          </div>
+        </div>
+      </div><!-- wrapper -->
+    </main>
+    
+    
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.js'></script>
+  <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
